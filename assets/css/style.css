@@ -601,7 +601,7 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
   display: -webkit-box;
-  line-clamp: 4;
+  -webkit-line-clamp: 4;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -1337,9 +1337,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 50% }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 100px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1435,7 +1435,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .testimonials-text {
-    line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
@@ -1835,7 +1834,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 100px; object-fit: cover;}
 
   .info-content .name {
     white-space: nowrap;
